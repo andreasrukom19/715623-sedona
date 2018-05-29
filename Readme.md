@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Лейсан Латыпова](https://up.htmlacademy.ru/htmlcss/21/user/715623).
-* Наставник: `Неизвестно`.
+* Наставник: Николай Думчев https://htmlacademy.ru/profile/nikopol_fw
 
 ---
 
