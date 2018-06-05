@@ -9,8 +9,8 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-        <img src="img/index-logo.svg" width="100" height="100" alt="Логотип города Седона">
-      </a>
+          <img src="img/index-logo.svg" width="100" height="100" alt="Логотип города Седона">
+        </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo-video.html">Фото и видео</a></li>
@@ -25,6 +25,8 @@
         <h2 class="visually-hidden">Форма поиска жилья</h2>
         <!--Фон через css -->
         <!--Форма-->
+      </section>
+      <section class="filters">
         <h2 class="visually-hidden">Фильтр результатов поиска</h2>
         <!--Фильтр-->
         <p>Найдено: 3</p>
@@ -33,29 +35,36 @@
         <p>По типу</p>
         <p>По рейтингу</p>
       </section>
-      <section class="housing-types">
-        <h2 class="visually-hidden">Виды проживания в Седоне</h2>
-        <h3>Amara Resort & Spa</h3>
-        <img src="img/amara.svg" width="100" height="100" alt="Amara Resort & Spa">
-        <p>Гостиница</p>
-        <p>от 4000 р.</p>
-        <button type="button">Подробнее</button>
-        <button type="button">Забронировать</button>
-        <p>Рейтинг: 8,5</p>
-        <h3>Desert Quail Inn</h3>
-        <img src="img/desert.svg" width="100" height="100" alt="Desert Quail Inn">
-        <p>Мотель</p>
-        <p>от 3000 р.</p>
-        <button type="button">Подробнее</button>
-        <button type="button">Забронировать</button>
-        <p>Рейтинг: 8,9</p>
-        <h3>Villas At Poco Diablo</h3>
-        <img src="img/desert.svg" width="100" height="100" alt="Villas At Poco Diablo">
-        <p>Апартаменты</p>
-        <p>от 2000 р.</p>
-        <button type="button">Подробнее</button>
-        <button type="button">Забронировать</button>
-        <p>Рейтинг: 9,2</p>
+      <section class="search-results">
+        <h2 class="visually-hidden">Результат поиска гостиниц</h2>
+        <ul class="search-results-list">
+          <li class="search-results-item">
+            <h3>Amara Resort & Spa</h3>
+            <img src="img/amara.svg" width="100" height="100" alt="Amara Resort & Spa">
+            <p>Гостиница</p>
+            <p>от 4000 р.</p>
+            <p>Рейтинг: 8,5</p>
+            <a class="about" href="about-amara.html">Подробнее</a>
+            <a class="booking" href="booking.html">Забронировать</a>
+          </li>
+          <li class="search-results-item">
+            <h3>Desert Quail Inn</h3>
+            <img src="img/desert.svg" width="100" height="100" alt="Desert Quail Inn">
+            <p>Мотель</p>
+            <p>от 3000 р.</p>
+            <p>Рейтинг: 8,9</p>
+            <a class="about" href="about-desert.html">Подробнее</a>
+            <a class="booking" href="booking.html">Забронировать</a>
+          </li>
+          <li class="search-results-item"><h3>Villas At Poco Diablo</h3>
+            <img src="img/desert.svg" width="100" height="100" alt="Villas At Poco Diablo">
+            <p>Апартаменты</p>
+            <p>от 2000 р.</p>
+            <p>Рейтинг: 9,2</p>
+            <a class="about" href="about-villas.html">Подробнее</a>
+            <a class="booking" href="booking.html">Забронировать</a>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="main-footer">
@@ -74,4 +83,3 @@
     </footer>
   </body>
 </html>
-
