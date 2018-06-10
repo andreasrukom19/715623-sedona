@@ -24,7 +24,50 @@
       <section class="house-selection-form filters">
         <h2 class="visually-hidden">Форма поиска жилья</h2>
         <!--Фон через css -->
-        <!--Форма-->
+        <form class="search-options" action="https://echo.htmlacademy.ru" method="post" oninput="minpriceoutput.value=daily-price.value">
+          <fieldset>
+            <legend class="visually-hidden">Форма поиска жилья</legend>
+            <h3>Инфраструктура:</h3>
+            <ul class="infrastructure-options">
+              <li>
+                <input id="pool-option1" type="checkbox" name="pool" checked>
+                <label for="pool-option1">Бассейн</label>
+              </li>
+              <li>
+                <input id="parking-option2" type="checkbox" name="parking">
+                <label for="parking-option2">Парковка</label>
+              </li>
+              <li>
+                <input id="wifi-option3" type="checkbox" name="wi-fi">
+                <label for="wifi-option3">Wi-Fi</label>
+              </li>
+            </ul>
+            <h3>Тип жилья:</h3>
+            <ul class="housing-options">
+              <li>
+                <input id="hotel-option1" type="checkbox" name="hotel" checked>
+                <label for="hotel-option1">Гостиница</label>
+              </li>
+              <li>
+                <input id="motel-option2" type="checkbox" name="motel" checked>
+                <label for="motel-option2">Мотель</label>
+              </li>
+              <li>
+                <input id="apart-option3" type="checkbox" name="apartments" checked>
+                <label for="apart-option3">Апартаменты</label>
+              </li>
+            </ul>
+            <div class="price-range">
+              <h3>Стоимость в сутки (р):</h3>
+              <output name="minpriceoutput">0</output>
+              <output name="maxpriceoutput">3000</output>
+              <label for="daily-price" class="visually-hidden">Стоимость в сутки (р):</label>
+              <input id="daily-price" type="range" min="0" max="4000" value="3000">
+              <button type="button">Показать</button>
+            </div>
+            <output></output>
+          </fieldset>
+        </form>
       </section>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр результатов поиска</h2>
