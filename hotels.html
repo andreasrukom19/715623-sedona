@@ -24,7 +24,7 @@
       <section class="house-selection-form filters">
         <h2 class="visually-hidden">Форма поиска жилья</h2>
         <!--Фон через css -->
-        <form class="search-options" action="https://echo.htmlacademy.ru" method="post" oninput="minpriceoutput.value=daily-price.value">
+        <form class="search-options" action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend class="visually-hidden">Форма поиска жилья</legend>
             <h3>Инфраструктура:</h3>
@@ -59,24 +59,37 @@
             </ul>
             <div class="price-range">
               <h3>Стоимость в сутки (р):</h3>
-              <output name="minpriceoutput">0</output>
-              <output name="maxpriceoutput">3000</output>
-              <label for="daily-price" class="visually-hidden">Стоимость в сутки (р):</label>
-              <input id="daily-price" type="range" min="0" max="4000" value="3000">
+              <input type="number" name="number-value" id="min-value" min="0" placeholder="от 0">
+              <label class="visually-hidden" for="min-value">Минимальная стоимость в сутки</label>
+              <input type="number" name="number-value" id="max-value" max="3000" placeholder="до 3000">
+              <label class="visually-hidden" for="max-value">Максимальная стоимость в сутки</label>
+              <div class="range-buttons">
+                <button class="min-button" type="button" value="Минимум"></button>
+                <button class="max-button" type="button" value="Максимум"></button>
+              </div>
+              <br>
               <button type="submit">Показать</button>
             </div>
-            <output></output>
           </fieldset>
         </form>
       </section>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр результатов поиска</h2>
-        <!--Фильтр-->
         <p>Найдено: 3</p>
-        <p>Сортировка:</p>
-        <p>По цене</p>
-        <p>По типу</p>
-        <p>По рейтингу</p>
+        <h3>Сортировка:</h3>
+        <p>
+          <ul class="sorting">
+            <li><a class="sorting-item" href="sort-by-price.html">По цене</a></li>
+            <li><a class="sorting-item" href="sort-by-type.html">По типу</a></li>
+            <li><a class="sorting-item" href="sort-by-rating.html">По рейтингу</a></li>
+          </ul>
+        </p>
+        <p>
+          <ul class="scope">
+            <li><a class="scope-item" href="results-ascending.html">По возрастанию</a></li>
+            <li><a class="scope-item" href="results-descending.html">По убыванию</a></li>
+          </ul>
+        </p>
       </section>
       <section class="search-results">
         <h2 class="visually-hidden">Результат поиска гостиниц</h2>

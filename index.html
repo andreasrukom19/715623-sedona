@@ -74,20 +74,30 @@
         <h2 class="visually-hidden">Поиск гостиницы и карта Седоны</h2>
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки, <br>и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-        <button type="button">Поиск гостиницы в Седоне</button>
+        <button type="button" name="hotel-search" value="Поиск гостиницы в Седоне">Поиск гостиницы в Седоне</button>
         <form class="hotel-searching" action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label for="date-check-in">Дата заезда:</label>
-            <input id="date-check-in" type="date" name="date">
+            <input id="date-check-in" type="text" name="date" placeholder="24 апреля 2017">
           </p>
           <p>
             <label for="date-check-out">Дата выезда:</label>
-            <input id="date-check-out" type="date" name="date">
+            <input id="date-check-out" type="text" name="date" placeholder="4 июля 2017">
           </p>
-          <p>Взрослые:</p>
-          <p>Дети:</p>
           <p>
-            <a class="search-link" href="search-result.html">Найти</a>
+            <label for="adult-figure">Взрослые:</label>
+            <button type="button" name="minus" value="Уменьшить">-</button>
+            <input type="number" name="adult" id="adult-figure" min="0" placeholder="2">
+            <button type="button" name="plus" value="Увеличить">+</button>
+          </p>
+          <p>
+            <label for="child-figure">Дети:</label>
+            <button type="button" name="minus" value="Уменьшить">-</button>
+            <input type="number" name="child" id="child-figure" min="0" placeholder="0">
+            <button type="button" name="plus" value="Увеличить">+</button>
+          </p>
+          <p>
+            <button type="submit" name="find" value="Найти">Найти</button>
           </p>
         </form>
         <img src="img/map.png" width="1200" height="593" alt="Навигация">
