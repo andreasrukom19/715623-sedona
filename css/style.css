@@ -29,11 +29,31 @@ a {
   text-decoration: none;
 }
 
+.main-header {
+  margin-bottom: 50px;
+}
+
+.main-header-logo {
+  position: absolute;
+  margin-left: 750px;
+  width: 138px;
+  height: 70px;
+}
+
 .main-navigation {
+  margin: 0;
+  padding: 0;
+
   color: #000000;
 }
 
 .site-navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -55,15 +75,43 @@ a {
   color: #766357;
 }
 
+.container {
+  text-align: center;
+}
+
 .main-picture {
-  background-image: url(../img/mask.jpg);
+  width: 1200px;
+  height: 773px;
+}
+
+.main-picture {
+  background-image: url(../img/mask.png);
   background-repeat: no-repeat;
+}
+
+.caption {
+  width: 458px;
+  height: 352px;
+}
+
+.caption-block {
+  position: absolute;
+  top: 180px;
+  left: 600px;
 }
 
 .features-list,
 .services-list {
+  margin: 0;
+  padding: 0;
+
   line-height: 21px;
   list-style: none;
+}
+
+.features-item,
+.services-item {
+  width: 400px;
 }
 
 .container h1 {
@@ -73,15 +121,30 @@ a {
 }
 
 .container p {
+  margin-top: 40px;
+
   text-align: center;
   color: #333333;
 }
 
 .block1 {
+  display: block;
+  width: 400px;
+  height: 227px;
+  margin-top: 60px;
+  margin-left: 200px;
+  padding-top: 50px;
+
   text-align: center;
   color: #ffffff;
 
   background-color: #81b3d2;
+}
+
+.real-city {
+  position: absolute;
+  top: 1070px;
+  left: 600px;
 }
 
 .block1 h3 {
@@ -95,6 +158,11 @@ a {
 }
 
 .services-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 165px;
+  width: 1200px;
+
   color: #000000;
 
   background-color: #ffffff;
@@ -110,10 +178,29 @@ a {
 }
 
 .block2 {
+  display: block;
+  margin-top: 330px;
+  margin-left: 1000px;
+  padding-top: 50px;
+  width: 400px;
+  height: 205px;
+
   text-align: center;
   color: #ffffff;
 
   background-color: #81b3d2;
+}
+
+.devil-bridge {
+  position: absolute;
+  right: 583px;
+  top: 1655px;
+}
+
+.block2 h3 {
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .block2 p {
@@ -121,6 +208,10 @@ a {
 }
 
 .rest {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+
   line-height: 21px;
   text-align: center;
 
