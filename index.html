@@ -9,21 +9,25 @@
   </head>
   <body>
     <header class="main-header">
-     	<nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/index-logo.jpg" width="138" height="70" alt="Логотип города Седона">
-        </a>
-     		<ul class="site-navigation">
-          <div class="left-menu">
-     		    <li><a href="info.html">Информация</a></li>
-     		    <li><a href="photo-video.html">Фото и видео</a></li>
+      <div class="navigation-container">
+     	  <nav class="main-navigation">
+          <a class="main-header-logo">
+            <img src="img/index-logo.jpg" width="138" height="70" alt="Логотип города Седона">
+          </a>
+          <div class="site-navigation-wrapper1">
+     		    <ul class="site-navigation1">
+     		      <li><a href="info.html">Информация</a></li>
+     		      <li><a href="photo-video.html">Фото и видео</a></li>
+            </ul>
           </div>
-          <div class="right-menu">
-     		    <li><a href="map.html">Карта штата</a></li>
-     		    <li><a href="hotels.html">Гостиницы</a></li>
+          <div class="site-navigation-wrapper2">
+            <ul class="site-navigation2">
+     		      <li><a href="map.html">Карта штата</a></li>
+     		      <li><a href="hotels.html">Гостиницы</a></li>
+     		    </ul>
           </div>
-     		</ul>
-     	</nav>
+     	  </nav>
+      </div>
     </header>
     <main class="container">
       <div class="main-picture-block">
@@ -67,23 +71,27 @@
             <p>Да, по нему можно пройти! Если конечно<br> Вы осмелитесь</p>
             <img class="devil-bridge" src="img/feature-picture2.jpg" width="800" height="256" alt="Мост дьявола">
           </li>
-          <div class="rest-block">
-            <li class="features-item rest">
-              <h3>Небольшая<br> площадь</h3>
-              <span>- №3 -</span>
-              <p>Все достопримечательности<br> находятся очень близко</p>
+            <li class="features-item">
+              <div class="rest">
+                <h3>Небольшая<br> площадь</h3>
+                <span>- №3 -</span>
+                <p>Все достопримечательности<br> находятся очень близко</p>
+              </div>
             </li>
-            <li class="features-item rest">
-              <h3>Красивая<br> дорога</h3>
-              <span>- №4 -</span>
-              <p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
+            <li class="features-item">
+              <div class="rest">
+                <h3>Красивая<br> дорога</h3>
+                <span>- №4 -</span>
+                <p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
+              </div>
             </li>
-            <li class="features-item rest">
-              <h3>Мало<br> туристов</h3>
-              <span>- №5 -</span>
-              <p>Большинство едет в Гранд Каньон и<br> толпится там</p>
+            <li class="features-item">
+              <div class="rest">
+                <h3>Мало<br> туристов</h3>
+                <span>- №5 -</span>
+                <p>Большинство едет в Гранд Каньон и<br> толпится там</p>
+              </div>
             </li>
-          <div>
         </ul>
       </section>
       <section class="hotel-search map">
@@ -124,21 +132,23 @@
             <button class="find-button" type="submit">Найти</button>
           </p>
         </form>
-        <img src="img/map.jpg" width="1200" height="593" alt="Навигация">
+        <img class="map" src="img/map.jpg" width="1200" height="593" alt="Навигация">
       </section>
     </main>
     <footer class="main-footer">
-      <p class="hashtag">#visitsedona</p>
-      <div class="footer-social">
-     	  <ul class="footer-social-list">
-     		  <li><a class="social-button" href="#">Twitter</a></li>
-     		  <li><a class="social-button" href="#">Facebook</a></li>
-     		  <li><a class="social-button" href="#">Youtube</a></li>
-     	  </ul>
+      <div class="container">
+        <p class="hashtag">#visitsedona</p>
+        <div class="footer-social">
+     	    <ul class="footer-social-list">
+     		    <li><a class="social-button" href="#">Twitter</a></li>
+     		    <li><a class="social-button" href="#">Facebook</a></li>
+     		    <li><a class="social-button" href="#">Youtube</a></li>
+     	    </ul>
+        </div>
+        <p class="footer-copyright">Website by
+     	    <a href="https://up.htmlacademy.ru/htmlcss/21">HTML Academy</a>
+        </p>
       </div>
-      <p class="footer-copyright">Website by
-     	  <a href="https://up.htmlacademy.ru/htmlcss/21">HTML Academy</a>
-      </p>
     </footer>
   </body>
 </html>

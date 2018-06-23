@@ -1,7 +1,7 @@
 body {
-  margin: 0;
-  padding: 0;
-  min-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 1200px;
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -10,7 +10,7 @@ body {
   color: #000000;
   text-transform: uppercase;
 
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .visually-hidden {
@@ -30,67 +30,91 @@ a {
   text-decoration: none;
 }
 
-.main-header {
-  margin-bottom: 50px;
-}
+.navigation-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 
-.main-header-logo {
-  position: absolute;
-  top: 0px;
-  margin-left: 750px;
-  width: 138px;
-  height: 70px;
-
-  z-index: 1;
+  background-color: #ffffff;
 }
 
 .main-navigation {
+  display: flex;
+  width: 100%;
   margin: 0;
   padding: 0;
 
   color: #000000;
 }
 
-.site-navigation {
+.main-header-logo {
+  order: 2;
+  margin: 0 auto;
+  width: 138px;
+  height: 70px;
+
+  z-index: 1;
+}
+
+.site-navigation-wrapper1 {
+  width: 100%;
+  margin: 0 30px 0 0;
+  padding: 25px 0;
+  order: 1;
+
+  background-color: #ffffff;
+}
+
+.site-navigation-wrapper2 {
+  width: 100%;
+  margin: 0 0 0 30px;
+  padding: 25px 0;
+  order: 3;
+
+  background-color: #ffffff;
+}
+
+.site-navigation1 {
   display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1062px;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 
   list-style: none;
 }
 
-.left-menu {
+.site-navigation2 {
   display: flex;
   justify-content: space-around;
-  margin-right: auto;
-  width: 530px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  list-style: none;
 }
 
-.right-menu {
-  display: flex;
-  justify-content: space-around;
-  margin-left: auto;
-  width: 530px;
-}
-
-.left-menu li,
-.right-menu li {
-  flex-basis: 265px;
-}
-
-.site-navigation a {
+.site-navigation1 a,
+.site-navigation2 a {
   font-weight: 700;
   color: #000000;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation1 a:hover,
+.site-navigation1 a:focus {
   color: #81b3d2;
 }
 
-.site-navigation a:active {
+.site-navigation2 a:hover,
+.site-navigation2 a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation1 a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation2 a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -99,7 +123,25 @@ a {
 }
 
 .container {
+  width: 100%;
+  margin: 0 auto;
+
   text-align: center;
+
+  background-color: #ffffff;
+}
+
+.container h1 {
+  font-size: 21px;
+  font-weight: 700;
+  text-align:center;
+}
+
+.container p {
+  margin-top: 40px;
+
+  text-align: center;
+  color: #333333;
 }
 
 .main-picture {
@@ -154,26 +196,13 @@ a {
   width: 400px;
 }
 
-.container h1 {
-  font-size: 21px;
-  font-weight: 700;
-  text-align:center;
-}
-
-.container p {
-  margin-top: 40px;
-
-  text-align: center;
-  color: #333333;
-}
-
 .block1 {
   display: block;
   width: 400px;
   height: 227px;
   margin-top: 60px;
-  margin-left: 200px;
   padding-top: 50px;
+  padding-bottom: 65px;
 
   text-align: center;
   color: #ffffff;
@@ -183,8 +212,8 @@ a {
 
 .real-city {
   position: absolute;
-  top: 953px;
-  left: 600px;
+  top: 912px;
+  left: 592px;
 }
 
 .block1 h3 {
@@ -199,13 +228,18 @@ a {
 
 .services-list {
   display: flex;
-  justify-content: space-between;
-  margin-top: 165px;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 165px 0px 90px 0px;
   width: 1200px;
 
   color: #000000;
 
   background-color: #ffffff;
+}
+
+.services-item {
+  width: 400px;
 }
 
 .services-list h4 {
@@ -220,8 +254,9 @@ a {
 .block2 {
   display: block;
   margin-top: 330px;
-  margin-left: 1000px;
+  margin-left: 800px;
   padding-top: 50px;
+  padding-bottom: 65px;
   width: 400px;
   height: 205px;
 
@@ -233,8 +268,8 @@ a {
 
 .devil-bridge {
   position: absolute;
-  right: 583px;
-  top: 1538px;
+  right: 590px;
+  top: 1600px;
 }
 
 .block2 h3 {
@@ -247,11 +282,11 @@ a {
   color: #ffffff;
 }
 
-.rest-block {
+.rest {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 200px;
+  margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 65px;
   width: 1200px;
@@ -321,8 +356,7 @@ a {
 }
 
 .hotel-searching {
-  position: absolute;
-  margin-left: 507px;
+  margin: 0 auto;
   width: 568px;
   height: 395px;
 
@@ -428,7 +462,6 @@ a {
 
 .search-options {
   display: flex;
-  margin-left: 200px;
   width: 1200px;
   min-height: 215px;
 
@@ -503,7 +536,6 @@ a {
   justify-content: space-around;
   align-items: baseline;
   max-width: 1200px;
-  margin-left: 200px;
   flex-wrap: nowrap;
 }
 
@@ -511,19 +543,21 @@ a {
   order: -1;
 }
 
-.filters-subblock1 {
+.sorting {
   display: flex;
   justify-content: space-around;
+
+  list-style: none;
+
+  font-size: 12px;
+  line-height: 18px;
 }
 
-.filters-subblock3 {
+.scope {
   display: flex;
 }
 
 .rate-filters hr {
-  margin-left: 200px;
-  margin-right: 200px;
-
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -536,13 +570,6 @@ a {
   font-size: 21px;
   font-weight: bold;
   text-align: left;
-}
-
-.sorting {
-  list-style: none;
-
-  font-size: 12px;
-  line-height: 18px;
 }
 
 .sorting-item {
@@ -568,14 +595,9 @@ a {
   list-style: none;
 }
 
-.search-results hr {
-  margin-left: 200px;
-  margin-right: 200px;
-
-  color: rgba(0, 0, 0, 0.3);
-}
-
 .search-results-list {
+  margin-right: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -590,18 +612,24 @@ a {
 }
 
 .search-results-item img+p {
-  margin-left: 30px; /* не сработало */
+  padding-left: 60px;
 }
 
-.hotel-block {
+.search-results-item {
   display: block;
-  margin-bottom: 30px;
+  padding: 30px 75px;
 
   text-align: left;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.villas {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .hotel-header {
-  margin-left: 360px;
+  margin-left: 160px;
 
   color: #000000;
 }
@@ -616,7 +644,6 @@ a {
 }
 
 .hotel-picture {
-  margin-left: 200px;
   float: left;
 }
 
@@ -679,17 +706,24 @@ a {
 }
 
 .main-footer {
+  margin: 0 auto;
+  padding: 0;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.main-footer .container {
   display: flex;
   justify-content: space-around;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 40px;
-  padding-bottom: 35px;
-
-  color: #000000;
+  align-items: baseline;
+  padding: 20px 0px 50px 0px;
 }
 
 .hashtag {
+  margin: 0;
+  width: 130px;
+
   font-size: 21px;
   font-weight: 700;
 }
@@ -697,6 +731,8 @@ a {
 .footer-social-list {
   display: flex;
   justify-content: center;
+  width: 150px;
+  margin: 0;
 
   text-align: center;
 
@@ -714,6 +750,9 @@ a {
 }
 
 .footer-copyright {
+  margin: 0;
+  width: 195px;
+
   font-weight: 700;
   text-align: right;
 }
