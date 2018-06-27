@@ -30,10 +30,14 @@ a {
   text-decoration: none;
 }
 
+.navigation-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .main-navigation {
   margin: 0;
   padding: 0;
-  width: 100%;
 
   color: #000000;
 
@@ -56,15 +60,13 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0 auto;
-  padding: 25px 0 25px 0;
-  width: 100%;
+  padding: 15px 0 15px 0;
+  width: 1200px;
 
   background-color: #ffffff;
 
   list-style: none;
 }
-
-/*
 
 .site-navigation li {
   flex-basis: 300px;
@@ -77,8 +79,6 @@ a {
 .site-navigation li:nth-child(4n + 3) {
   margin-left: auto;
 }
-
-*/
 
 .site-navigation a {
   font-weight: 700;
@@ -123,16 +123,17 @@ a {
 .main-picture {
   width: 1200px;
   height: 773px;
+
+  z-index: 1;
 }
 
-.main-picture-block {
-  position: relative;
+.main-picture-block img {
+  display: block;
 }
-
 
 .mask-block {
   position: absolute;
-  top: 596px;
+  top: 556px;
   left: 0;
   right: 0;
   margin-right: auto;
@@ -147,25 +148,24 @@ a {
 }
 
 .caption {
-  width: 458px;
-  height: 352px;
-}
-
-.caption-block {
   position: absolute;
-  top: 208px;
+  top: 205px;
   left: 0;
   right: 0;
   width: 458px;
+  height: 352px;
   margin-left: auto;
   margin-right: auto;
+
+  z-index: 2;
 }
 
 .begin-block {
   position: absolute;
-  top: 675px;
+  top: 650px;
   left: 0;
   right: 0;
+  height: 273px;
   width: 576px;
   margin-right: auto;
   margin-left: auto;
@@ -213,6 +213,10 @@ a {
 
 .real-city-block {
   padding: 20px 40px;
+}
+
+.real-city-picture {
+  display: block;
 }
 
 .services-list {
@@ -265,6 +269,10 @@ a {
 
 .devil-bridge-block {
   padding: 20px 40px;
+}
+
+.devil-bridge-picture {
+  display: block;
 }
 
 .rest {
@@ -443,13 +451,18 @@ a {
   background-color: #5496bd;
 }
 
+.map {
+  margin-bottom: -90px;
+
+  z-index: 0;
+}
+
 /* вторая страница */
 
 .search-options {
   display: flex;
   align-items: center;
   width: 100%;
-  min-height: 215px;
 
   font: inherit;
   font-weight: 700;
@@ -475,7 +488,8 @@ a {
 
 .search-block3 {
   margin-top: 13px;
-  margin-left: 332px; /* почему не работает margin-right? */
+  margin-left: auto;
+  margin-right: 73px;
   margin-bottom: 30px;
 }
 
@@ -707,7 +721,8 @@ a {
 .rating-block {
   display: flex;
   flex-direction: column;
-  margin-right: 73px; /* почему не работает? */
+  margin-left: auto;
+  margin-right: 73px;
   margin-top: 25px;
 }
 
@@ -721,7 +736,7 @@ a {
 
   color: #666666;
 
-  background-color: rgba(102, 102, 102, 0.3);
+  background-color: rgba(102, 102, 102, 0.1);
 }
 
 
@@ -775,7 +790,20 @@ a {
 }
 
 .main-footer {
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  padding: 0;
+  color: #000000;
+
+  background-color: #ffffff;
+  opacity: 0.9;
+}
+
+.hotel-footer {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0px;
   padding: 0;
   color: #000000;
 
@@ -783,6 +811,13 @@ a {
 }
 
 .main-footer .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  padding: 20px 0px 50px 0px;
+}
+
+.hotel-footer .container {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
