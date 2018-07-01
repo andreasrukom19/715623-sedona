@@ -32,15 +32,15 @@
               <legend>Инфраструктура:</legend>
               <ul class="infrastructure-options">
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input-checkbox-on" id="pool-option1" type="checkbox" name="pool" checked>
+                  <input class="visually-hidden filter-input-checkbox-on filter-input" id="pool-option1" type="checkbox" name="pool" checked>
                   <label for="pool-option1">Бассейн</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input-checkbox-off" id="parking-option2" type="checkbox" name="parking">
+                  <input class="visually-hidden filter-input-checkbox-off filter-input" id="parking-option2" type="checkbox" name="parking">
                   <label for="parking-option2">Парковка</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input-checkbox-off" id="wifi-option3" type="checkbox" name="wi-fi">
+                  <input class="visually-hidden filter-input-checkbox-off filter-input" id="wifi-option3" type="checkbox" name="wi-fi">
                   <label for="wifi-option3">Wi-Fi</label>
                 </li>
               </ul>
@@ -51,15 +51,15 @@
               <legend>Тип жилья:</legend>
               <ul class="housing-options">
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input-checkbox-on" id="hotel-option1" type="checkbox" name="hotel" checked>
+                  <input class="visually-hidden filter-input-checkbox-on filter-input" id="hotel-option1" type="checkbox" name="hotel" checked>
                   <label for="hotel-option1">Гостиница</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input-checkbox-on" id="motel-option2" type="checkbox" name="motel" checked>
+                  <input class="visually-hidden filter-input-checkbox-on filter-input" id="motel-option2" type="checkbox" name="motel" checked>
                   <label for="motel-option2">Мотель</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input-checkbox-on" id="apart-option3" type="checkbox" name="apartments" checked>
+                  <input class="visually-hidden filter-input-checkbox-on filter-input" id="apart-option3" type="checkbox" name="apartments" checked>
                   <label for="apart-option3">Апартаменты</label>
                 </li>
               </ul>
@@ -69,14 +69,15 @@
             <fieldset>
               <legend>Стоимость в сутки (р):</legend>
               <div class="price-range">
-                <input type="number" name="number-value" id="min-value" min="0" placeholder="от 0">
-                <label class="visually-hidden" for="min-value">Минимальная стоимость в сутки</label>
-                <input type="number" name="number-value" id="max-value" max="3000" placeholder="до 3000">
-                <label class="visually-hidden" for="max-value">Максимальная стоимость в сутки</label>
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
               </div>
-              <div class="range-buttons">
-                <button class="min-button" type="button" value="Минимум"></button>
-                <button class="max-button" type="button" value="Максимум"></button>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
               </div>
               <br>
               <button class="show-button" type="submit">Показать</button>
@@ -116,7 +117,7 @@
                 <div class="hotel-header-block">
                   <h3><a class="hotel-header" href="about-amara.html">Amara Resort & Spa</a></h3>
                 </div>
-                <div class="description-block">
+                <div class="description-block1">
                   <p>Гостиница<span>от 4000 р.</span></p>
                 </div>
                 <div class="hotel-buttons">
@@ -144,7 +145,7 @@
                 <div class="hotel-header-block">
                   <h3><a class="hotel-header" href="about-desert.html">Desert Quail Inn</a></h3>
                 </div>
-                <div class="description-block">
+                <div class="description-block2">
                   <p>Мотель<span>от 3000 р.</span></p>
                 </div>
                 <div class="hotel-buttons">
@@ -171,7 +172,7 @@
                 <div class="hotel-header-block">
                   <h3><a class="hotel-header" href="about-villas.html">Villas At Poco Diablo</a></h3>
                 </div>
-                <div class="description-block">
+                <div class="description-block3">
                   <p>Апартаменты<span>от 2000 р.</span></p>
                 </div>
                 <div class="hotel-buttons">
@@ -190,7 +191,7 @@
         </ul>
       </section>
     </main>
-    <footer class="hotel-footer">
+    <footer class="main-footer">
       <div class="container">
         <p class="hashtag">#visitsedona</p>
         <div class="footer-social">
