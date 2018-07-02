@@ -15,6 +15,8 @@ body {
   width: 1200px;
   margin: 0 auto;
 
+  background-color: #ffffff;
+
   box-shadow: 3px -5px 15px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -63,24 +65,25 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  padding: 0px;
 
   list-style: none;
 }
 
 .site-navigation li {
-  flex: 0 0 244px;
-
+  flex: 0 0 239px;
+  padding-top: 12px;
+  padding-bottom: 14px;
 
   text-align: center;
 }
 
-.site-navigation li:nth-child(4n + 2) {
-  margin-right: 140px;
+.site-navigation li:nth-child(2) {
+  margin-right: 244px;
 }
 
 
 .site-navigation a {
-  display: block;
   padding: 15px 0;
   vertical-align: middle;
 
@@ -102,13 +105,9 @@ a {
   color: #766357;
 }
 
-.container {
-  text-align: center;
-
-  background-color: #ffffff;
-}
-
 .container h1 {
+  margin-top: 65px;
+
   font-size: 21px;
   font-weight: 700;
   text-align:center;
@@ -121,11 +120,14 @@ a {
   color: #333333;
 }
 
+.container .introduction {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
 .main-picture {
   width: 1200px;
-  height: 773px;
-
-  z-index: 1;
+  height: 508px;
 }
 
 .main-picture-block {
@@ -138,13 +140,13 @@ a {
 
 .mask-block {
   position: absolute;
-  top: 500px;
+  top: 451px;
   left: 0;
   right: 0;
   margin-right: auto;
   margin-left: auto;
   width: 1200px;
-  height: 273px;
+  height: 57px;
 
   background-image: url(../img/mask.png);
   background-repeat: no-repeat;
@@ -154,7 +156,7 @@ a {
 
 .caption {
   position: absolute;
-  top: 150px;
+  top: 75px;
   left: 0;
   right: 0;
   width: 458px;
@@ -163,19 +165,6 @@ a {
   margin-right: auto;
 
   z-index: 2;
-}
-
-.begin-block {
-  position: absolute;
-  top: 600px;
-  left: 0;
-  right: 0;
-  height: 273px;
-  width: 576px;
-  margin-right: auto;
-  margin-left: auto;
-
-  z-index: 3;
 }
 
 .features-list {
@@ -210,6 +199,8 @@ a {
 
 .block1 p {
   color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .subblock1 {
@@ -217,7 +208,13 @@ a {
 }
 
 .real-city-block {
-  padding: 20px 40px;
+  padding-top: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.real-city-block p {
+  padding-left: 12px;
 }
 
 .real-city-picture {
@@ -233,16 +230,46 @@ a {
   background-color: #ffffff;
 }
 
-.services-item {
-  flex: 0 0 400px;
-  padding: 150px 10px 80px;
+.services-list p {
+  color: #333333;
 }
 
-.services-list h4 {
+.services-item {
+  flex: 0 0 400px;
+  padding: 130px 0px 30px 30px;
+
+  text-align: center;
+}
+
+.services-item h4 {
   position: relative;
 
   font-size: 21px;
   font-weight: 700;
+}
+
+.services-item .house {
+  left: 15px;
+}
+
+.services-item .house-block {
+  padding-left: 33px;
+}
+
+.services-item .food {
+  left: -15px;
+}
+
+.services-item .food-block {
+  padding-right: 25px;
+}
+
+.services-item .souvenir {
+  left: -43px;
+}
+
+.services-item .souvenir-block {
+  padding-right: 85px;
 }
 
 .services-list .house::before {
@@ -250,7 +277,7 @@ a {
 
   position: absolute;
   bottom: 50px;
-  left: 163px;
+  left: 165px;
   width: 75px;
   height: 72px;
 
@@ -278,17 +305,13 @@ a {
 
   position: absolute;
   bottom: 50px;
-  left: 168px;
+  left: 165px;
   width: 64px;
   height: 76px;
 
   background-image: url(../img/icon-2.svg);
   background-repeat: no-repeat;
   background-color: #ffffff;
-}
-
-.services-list p {
-  color: #333333;
 }
 
 .block2 {
@@ -317,7 +340,7 @@ a {
 }
 
 .devil-bridge-block {
-  padding: 20px 40px;
+  padding: 25px 40px 9px;
 }
 
 .devil-bridge-picture {
@@ -327,8 +350,8 @@ a {
 .rest {
   flex-wrap: wrap;
   flex: 0 0 400px;
-  padding-top: 50px;
-  padding-bottom: 65px;
+  padding-top: 30px;
+  padding-bottom: 10px;
 
   line-height: 21px;
   text-align: center;
@@ -352,7 +375,7 @@ a {
 }
 
 .interest {
-  margin-top: 60px;
+  margin-top: 45px;
 }
 
 .hotel-search b {
@@ -361,13 +384,13 @@ a {
 }
 
 .hotel-search b+p {
-  margin-top: 40px;
+  margin-top: 35px;
   color: #333333;
   line-height: 24px;
  }
 
 .hotelsearch-button {
-  margin-top: 55px;
+  margin-top: 30px;
   width: 568px;
   height: 86px;
 
@@ -409,7 +432,7 @@ a {
 }
 
 .hotel-searching input[type="text"] {
-  width: 346px;
+  width: 309px;
   height: 38px;
 }
 
@@ -420,12 +443,12 @@ a {
 .check-block p {
   display: flex;
   justify-content: center;
-  align-items: baseline;
-  margin-bottom: 30px;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.check-block input {
-  z-index: 0;
+.calendar {
+  padding-right: 5px;
 }
 
 .calendar path {
@@ -433,44 +456,42 @@ a {
 }
 
 .calendar-btn {
-  position: absolute;
-  right: 70px;
-  top: 63px;
-  width: 25px;
-  height: 26px;
+  width: 37px;
+  height: 40px;
 
-  background-color: transparent;
+  text-align: left;
+
+  background-color: #f2f2f2;
   border: none;
 
   cursor: pointer;
-
-  opacity: 0.3;
-  z-index: 1;
 }
 
-.calendar-btn:hover,
-.calendar-btn:focus {
-  color: #000000;
+.calendar:hover path,
+.calendar:focus path {
+  fill: #000000;
+
+  opacity: 1;
 }
 
 .calendar:active path {
   fill: #81b3d2;
+
+  opacity: 1;
 }
 
 .adult-child-block {
   display: flex;
   align-items: baseline;
   margin-left: 42px;
+  margin-top: -10px;
 }
 
 .adult-block {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 20px;
-  margin-top: 0px;
-
-  background-color: yellow;
+  margin-left: 15px;
 }
 
 .child-block {
@@ -484,7 +505,7 @@ a {
 .adult-figure {
   margin-top: 30px;
   margin-bottom: auto;
-  margin-left: 15px;
+  margin-left: 14px;
 }
 
 .child-figure {
@@ -559,6 +580,7 @@ a {
   height: 58px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -15px;
   margin-bottom: 55px;
 
   font-size: 21px;
@@ -583,9 +605,7 @@ a {
 }
 
 .map {
-  margin-bottom: -90px;
-
-  z-index: 0;
+  margin-bottom: -110px;
 }
 
 /* вторая страница */
@@ -1039,7 +1059,7 @@ a {
   flex-direction: column;
   margin-left: auto;
   margin-right: 73px;
-  margin-top: 25px;
+  margin-top: 5px;
 }
 
 .star {
@@ -1059,8 +1079,6 @@ a {
 
   background-color: rgba(102, 102, 102, 0.1);
 }
-
-
 
 .about {
   width: 77px;
