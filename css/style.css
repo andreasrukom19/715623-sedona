@@ -1,6 +1,4 @@
 body {
-  padding: 0 40px;
-
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -491,6 +489,11 @@ a {
   margin-top: -10px;
 }
 
+.adult-child-block input[type="text"] {
+  width: 38px;
+  height: 38px;
+}
+
 .adult-block {
   display: flex;
   justify-content: center;
@@ -516,8 +519,7 @@ a {
   margin-left: 50px;
 }
 
-.hotel-searching input[type="text"],
-.hotel-searching input[type="number"] {
+.hotel-searching input[type="text"] {
   font-weight: 700;
 
   background-color: #f2f2f2;
@@ -578,6 +580,22 @@ a {
 }
 
 .hotel-searching input[type="text"]:focus {
+  width: 305px;
+  height: 34px;
+
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  outline: none;
+}
+
+.adult-child-block input[type="text"]:hover {
+  background-color: #ebebeb;
+}
+
+.adult-child-block input[type="text"]:focus {
+  width: 34px;
+  height: 36px;
+
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   outline: none;
@@ -714,19 +732,19 @@ a {
   font-weight: normal;
 }
 
-.filter-input-checkbox-on + label::before {
+.filter-input:checked + label::before {
   content: "";
   position: absolute;
   left: -40px;
 
-  width: 27px;
+  width: 23px;
   height: 23px;
 
   background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
 }
 
-.filter-input-checkbox-off + label::before {
+.filter-input:not(:checked) + label::before {
   content: "";
   position: absolute;
   left: -40px;
@@ -738,7 +756,29 @@ a {
   background-repeat: no-repeat;
 }
 
-.filter-input:disabled {
+.filter-input:checked + label::hover,
+.filter-input:checked + label::focus {
+  background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+}
+
+.filter-input:checked + label::active {
+  background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+}
+
+.filter-input:not(:checked) + label::hover,
+.filter-input:not(:checked) + label::focus {
+  background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+}
+
+.filter-input:not(:checked) + label::active {
+  background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+}
+
+.filter-input:disabled + label {
   color: #ffffff;
 
   opacity: 0.3;
@@ -1104,12 +1144,13 @@ a {
 .about:hover,
 .about:focus {
   background-color: #669ec0;
-  border: 5px solid #669ec0;
+  border: 3px solid #669ec0;
 }
 
 .about:active {
   color: rgba(255, 255, 255, 0.3);
 
+  border: 3px solid #669ec0;
   background-color: #5496bd;
 }
 
@@ -1128,14 +1169,14 @@ a {
 .booking:hover,
 .booking:focus {
   background-color: #604e43;
-  border: 5px solid #604e43;
+  border: 3px solid #604e43;
 }
 
 .booking:active {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #503e33;
-  border: 5px solid #503e33;
+  border: 3px solid #503e33;
 }
 
 .main-footer {
