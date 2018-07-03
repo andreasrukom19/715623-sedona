@@ -236,7 +236,7 @@ a {
 
 .services-item {
   flex: 0 0 400px;
-  padding: 130px 0px 30px 30px;
+  padding: 120px 0px 65px 30px;
 
   text-align: center;
 }
@@ -249,6 +249,7 @@ a {
 }
 
 .services-item .house {
+  top: 12px;
   left: 15px;
 }
 
@@ -257,6 +258,7 @@ a {
 }
 
 .services-item .food {
+  top: 12px;
   left: -15px;
 }
 
@@ -265,6 +267,7 @@ a {
 }
 
 .services-item .souvenir {
+  top: 12px;
   left: -43px;
 }
 
@@ -375,7 +378,7 @@ a {
 }
 
 .interest {
-  margin-top: 45px;
+  margin-top: 65px;
 }
 
 .hotel-search b {
@@ -384,13 +387,14 @@ a {
 }
 
 .hotel-search b+p {
-  margin-top: 35px;
+  margin-top: 5px;
+
   color: #333333;
   line-height: 24px;
  }
 
 .hotelsearch-button {
-  margin-top: 30px;
+  margin-top: 10px;
   width: 568px;
   height: 86px;
 
@@ -444,7 +448,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: -10px;
 }
 
 .calendar {
@@ -525,10 +529,14 @@ a {
 .hotel-searching input[type="number"]::-webkit-input-placeholder {
   padding-left: 10px;
 
+  text-transform: uppercase;
+
   color: #000000;
 }
 
 .hotel-searching input[type="text"]:input:-moz-placeholder {
+  text-transform: uppercase;
+
   color: #000000;
 }
 
@@ -580,7 +588,7 @@ a {
   height: 58px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -15px;
+  margin-top: 10px;
   margin-bottom: 55px;
 
   font-size: 21px;
@@ -614,6 +622,7 @@ a {
   display: flex;
   align-items: center;
   width: 100%;
+  box-sizing: border-box;
 
   font: inherit;
   font-weight: 700;
@@ -643,20 +652,19 @@ a {
 }
 
 .search-block1 {
-  margin-top: 25px;
+  margin-top: 19px;
   margin-left: 60px;
   margin-bottom: -13px;
 }
 
 .search-block2 {
-  margin-top: 25px;
-  margin-left: 80px;
+  margin-top: 21px;
+  margin-left: 92px;
   margin-bottom: -13px;
 
 }
 
 .search-block3 {
-  width: 330px;
   margin-left: auto;
   margin-right: 73px;
   margin-top: 30px;
@@ -699,6 +707,7 @@ a {
 
 .filter-option label {
   position: relative;
+  right: 8px;
 
   display: block;
 
@@ -708,7 +717,7 @@ a {
 .filter-input-checkbox-on + label::before {
   content: "";
   position: absolute;
-  left: -45px;
+  left: -40px;
 
   width: 27px;
   height: 23px;
@@ -720,7 +729,7 @@ a {
 .filter-input-checkbox-off + label::before {
   content: "";
   position: absolute;
-  left: -45px;
+  left: -40px;
 
   width: 23px;
   height: 23px;
@@ -872,10 +881,12 @@ a {
   align-items: baseline;
   flex-basis: 100%;
   flex-wrap: nowrap;
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 
 .filters-block h2 {
-  padding-left: 50px;
+  padding-left: 47px;
 }
 
 .filters-subblock1 {
@@ -903,7 +914,7 @@ a {
 
 .sorting-item {
   color: rgba(0, 0, 0, 0.3);
-  margin-right: 35px;
+  margin-right: 32px;
 
   border-bottom: 1px dashed rgba(0, 0, 0 , 0.3);
 }
@@ -937,7 +948,7 @@ a {
 }
 
 .scope li {
-  margin-left: 20px;
+  margin-left: 13px;
 }
 
 .scope a path {
@@ -1019,7 +1030,6 @@ a {
 }
 
 .hotel-picture-block {
-  margin-top: 10px;
   margin-left: 73px;
 }
 
@@ -1027,7 +1037,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: -25px;
+  margin-top: -35px;
   margin-left: 30px;
 }
 
@@ -1039,15 +1049,15 @@ a {
 }
 
 .description-block1 span {
-  margin-left: 43px;
+  margin-left: 40px;
 }
 
 .description-block2 span {
-  margin-left: 67px;
+  margin-left: 65px;
 }
 
 .description-block3 span {
-  margin-left: 26px;
+  margin-left: 21px;
 }
 
 .hotel-buttons {
@@ -1073,7 +1083,7 @@ a {
 }
 
 .rating {
-  padding: 5px 17px;
+  padding: 2px 17px;
 
   color: #666666;
 
@@ -1088,7 +1098,7 @@ a {
   color: #ffffff;
 
   background-color: #81b3d2;
-  border: 5px solid #81b3d2;
+  border: 3px solid #81b3d2;
 }
 
 .about:hover,
@@ -1112,7 +1122,7 @@ a {
   color: #ffffff;
 
   background-color: #766357;
-  border: 5px solid #766357;
+  border: 3px solid #766357;
 }
 
 .booking:hover,
@@ -1141,11 +1151,11 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
-  padding: 5px 0px 40px 0px;
+  padding: 5px 10px 30px 10px;
 }
 
 .hashtag {
-  margin: 0;
+  margin: -10px 0px 15px 5px;
 
   font-size: 21px;
   font-weight: 700;
@@ -1157,7 +1167,7 @@ a {
   justify-content: space-between;
   width: 151px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0px 0px 25px 10px;
 
   text-align: center;
 
