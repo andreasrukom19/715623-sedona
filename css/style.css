@@ -10,6 +10,7 @@ body {
 }
 
 .wrapper {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
 
@@ -624,7 +625,7 @@ a {
 }
 
 .map {
-  margin-bottom: -130px;
+  margin-bottom: -90px;
 }
 
 /* вторая страница */
@@ -1175,23 +1176,29 @@ a {
 .main-footer {
   margin: 0;
   padding: 0;
+
   color: #000000;
 
   background-color: #ffffff;
   opacity: 0.9;
 }
 
+.main-footer-index {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
 .main-footer .container {
   display: flex;
-  justify-content: space-around;
   align-items: baseline;
-  padding-top: -60px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 }
 
 .hashtag {
-  padding-left: 30px;
-
+  padding-left: 133px;
   font-size: 21px;
   font-weight: 700;
 }
@@ -1201,8 +1208,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 151px;
-  margin: 0 auto;
-  padding-left: 65px;
+  padding-left: 257px;
 
   text-align: center;
 
@@ -1244,8 +1250,7 @@ a {
 }
 
 .footer-copyright {
-  margin: 0;
-  padding-left: 30px;
+  padding-left: 230px;
   width: 195px;
 
   font-weight: 700;
