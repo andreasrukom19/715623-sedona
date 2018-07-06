@@ -71,6 +71,7 @@ a {
 
 .site-navigation li {
   flex: 0 0 239px;
+  width: 239px;
   padding-top: 12px;
   padding-bottom: 14px;
 
@@ -83,7 +84,6 @@ a {
 
 
 .site-navigation a {
-  padding: 15px 0;
   vertical-align: middle;
 
   font-weight: 700;
@@ -183,7 +183,6 @@ a {
 .block1 {
   flex: 0 0 100%;
 
-
   text-align: center;
   color: #ffffff;
 
@@ -226,7 +225,10 @@ a {
 
 .services-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+  padding-left: auto;
+  padding-right: auto;
 
   color: #000000;
 
@@ -239,7 +241,9 @@ a {
 
 .services-item {
   flex: 0 0 400px;
-  padding: 120px 0px 65px 30px;
+  box-sizing: border-box;
+  width: 400px;
+  padding: 120px 40px 65px;
 
   text-align: center;
 }
@@ -253,29 +257,20 @@ a {
 
 .services-item .house {
   top: 12px;
-  left: 15px;
-}
-
-.services-item .house-block {
-  padding-left: 33px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .services-item .food {
   top: 12px;
-  left: -15px;
-}
-
-.services-item .food-block {
-  padding-right: 25px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .services-item .souvenir {
   top: 12px;
-  left: -43px;
-}
-
-.services-item .souvenir-block {
-  padding-right: 85px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .services-list .house::before {
@@ -283,7 +278,8 @@ a {
 
   position: absolute;
   bottom: 50px;
-  left: 165px;
+  left: 50%;
+  transform: translate(-50%);
   width: 75px;
   height: 72px;
 
@@ -297,7 +293,8 @@ a {
 
   position: absolute;
   bottom: 50px;
-  left: 163px;
+  left: 50%;
+  transform: translate(-50%);
   width: 74px;
   height: 70px;
 
@@ -311,7 +308,8 @@ a {
 
   position: absolute;
   bottom: 50px;
-  left: 165px;
+  left: 50%;
+  transform: translate(-50%);
   width: 64px;
   height: 76px;
 
@@ -358,6 +356,7 @@ a {
 .rest {
   flex-wrap: wrap;
   flex: 0 0 400px;
+  width: 400px;
   padding-top: 28px;
   padding-bottom: 45px;
 
@@ -452,6 +451,7 @@ a {
 
 .check-block {
   margin-top: 56px;
+  box-sizing: border-box;
 }
 
 .check-block p {
@@ -498,6 +498,7 @@ a {
   display: flex;
   justify-content: space-between;
   margin-top: -35px;
+  box-sizing: border-box;
 }
 
 .adult-child-block input[type="text"] {
@@ -559,6 +560,7 @@ a {
   width: 40px;
   height: 41px;
 
+  font-size: 14px;
   font-weight: 700;
   color: #a9a9a9;
 
@@ -583,11 +585,9 @@ a {
 .hotel-searching input[type="text"]:hover {
   background-color: #ebebeb;
   border-color: #e5e5e5;
-
 }
 
 .hotel-searching input[type="text"]:focus {
-
   background-color: #ffffff;
   border-color: #e5e5e5;
   outline: none;
@@ -812,7 +812,7 @@ a {
 .price-range .min-price,
 .price-range .max-price {
   width: 90px;
-  padding-left: 65px;
+  padding-left: 67px;
 }
 
 .price-range input {
@@ -900,7 +900,6 @@ a {
 .filters-block {
   display: flex;
   align-items: baseline;
-  flex-basis: 100%;
   flex-wrap: nowrap;
   margin-top: -10px;
   margin-bottom: 10px;
@@ -924,6 +923,7 @@ a {
 
 .sorting {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding-left: 40px;
 
@@ -1011,9 +1011,9 @@ a {
 
 .search-results-item {
   display: flex;
-  flex: 0 0 152px;
+  flex-wrap: wrap;
   align-items: center;
-  padding: 0;
+  padding: 20px 0px;
 
   text-align: left;
 
@@ -1162,7 +1162,7 @@ a {
 
 .main-footer {
   margin: 0;
-  padding-top: 13px;
+  padding-top: 17px;
   padding-bottom: 15px;
   display: flex;
   align-items: baseline;
