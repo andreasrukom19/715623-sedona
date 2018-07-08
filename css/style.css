@@ -179,9 +179,14 @@ a {
 .services-list {
   margin: 0;
   padding: 0;
+  max-width: 1200px;
 
   line-height: 21px;
   list-style: none;
+}
+
+.services-list {
+  max-width: 1200px;
 }
 
 .block1 {
@@ -451,26 +456,27 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0 27px;
+  margin: 0 0 30px;
 }
 
 .check-block label {
-  padding-right: 15px;
+  margin-right: 8px;
+  flex: 0 0 100px;
+
+  text-align: left;
 }
 
-.calendar {
-  padding-right: 5px;
-}
+.calendar-btn svg {
+  fill: #000000;
 
-.calendar path {
-  opacity: 0.3;
+  fill-opacity: 0.3;
 }
 
 .calendar-btn {
   width: 37px;
   padding: 7px 5px;
 
-  text-align: left;
+  text-align: center;
 
   background-color: #f2f2f2;
   border: none;
@@ -478,17 +484,17 @@ a {
   cursor: pointer;
 }
 
-.calendar:hover path,
-.calendar:focus path {
+.calendar-btn svg:hover,
+.calendar-btn svg:focus {
   fill: #000000;
 
-  opacity: 1;
+  fill-opacity: 1;
 }
 
-.calendar:active path {
+.calendar-btn svg:active {
   fill: #81b3d2;
 
-  opacity: 1;
+  fill-opacity: 1;
 }
 
 .adult-child-block {
@@ -496,7 +502,7 @@ a {
   justify-content: space-between;
   align-items: stretch;
   box-sizing: border-box;
-  margin-bottom: 57px;
+  margin-bottom: 53px;
 }
 
 .adult-child-block .adult {
@@ -514,8 +520,13 @@ a {
 }
 
 .adult-child-block input[type="text"] {
-  width: 38px;
-  padding: 10px 0px;
+  width: 23px;
+  padding: 10px 0px 10px 15px;
+
+  font-weight: 700;
+
+  background-color: #f2f2f2;
+  border: 2px solid transparent;
 }
 
 .adult-block {
@@ -538,7 +549,10 @@ a {
   margin-right: 15px;
 }
 
-.hotel-searching input[type="text"] {
+.check-block input[type="text"] {
+  padding-left: 15px;
+  padding-right: 15px;
+
   font-weight: 700;
 
   background-color: #f2f2f2;
@@ -546,8 +560,6 @@ a {
 }
 
 .hotel-searching input[type="text"]::-webkit-input-placeholder {
-  padding-left: 15px;
-
   text-transform: uppercase;
 
   color: #000000;
@@ -555,12 +567,13 @@ a {
 
 .plus-minus {
   margin: 0px;
-  padding: 11px 0px;
-  width: 40px;
+  padding: 11px 20px;
+  width: 35px;
 
   font-size: 16px;
   font-weight: 700;
   color: #a9a9a9;
+  text-align: center;
 
   background-color: #f2f2f2;
   border: none;
@@ -704,12 +717,6 @@ a {
   list-style: none;
 }
 
-.infrastructure-options {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-}
-
 .infrastructure-options li:first-child,
 .housing-options li:first-child {
   margin-top: 20px;
@@ -761,15 +768,11 @@ a {
   opacity: 0.3;
 }
 
-.housing-options {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-}
-
 .price-range {
   position: relative;
 
+  display: flex;
+  width: 315px;
   height: 36px;
   margin-bottom: 20px;
 
@@ -795,20 +798,24 @@ a {
 }
 
 .price-range label {
-  display: inline-block;
+  flex: 0 0 50%;
 
   font-size: 14px;
   font-weight: normal;
   line-height: 38px;
   vertical-align: top;
+  text-align: center;
 
   cursor: pointer;
 }
 
-.price-range .min-price,
-.price-range .max-price {
+.price-range .min-price {
   width: 90px;
-  padding-left: 67px;
+  padding-left: 23px;
+}
+
+.price-range .max-price {
+  padding-right: 35px;
 }
 
 .price-range input {
