@@ -160,5 +160,20 @@
         </p>
     </footer>
   </div>
+  <script>
+    var link = document.querySelector(".hotelsearch-button");
+    var popup = document.querySelector(".hotel-searching");
+    var close = popup.querySelector(".hotel-searching");
+
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("hotel-searching");
+    });
+
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.toggle("hotel-searching");
+    });
+  </script>
   </body>
 </html>

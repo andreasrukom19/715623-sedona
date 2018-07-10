@@ -397,13 +397,14 @@ a {
 .hotelsearch-button {
   margin-top: 47px;
   width: 568px;
-  padding: 30px 20px;
+  padding: 32px 20px;
 
   font-size: 21px;
   font-weight: 700;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
+  line-height: 1;
 
   color: #ffffff;
 
@@ -428,7 +429,7 @@ a {
   right: 0;
 
   margin: 0 auto;
-  padding: 55px 55px 41px 55px;
+  padding: 56px 55px 41px 55px;
   box-sizing: border-box;
   width: 568px;
 
@@ -440,7 +441,9 @@ a {
 
 .hotel-searching input[type="text"] {
   width: 309px;
-  padding: 10px 0px 9px;
+  padding: 8px 0px 8px;
+
+  line-height: 1;
 }
 
 .check-block {
@@ -451,11 +454,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0 30px;
+  margin: 0 0 28px;
 }
 
 .check-block label {
-  margin-right: 8px;
+  margin-right: 12px;
   flex: 0 0 100px;
 
   text-align: left;
@@ -469,7 +472,7 @@ a {
 
 .calendar-btn {
   width: 37px;
-  padding: 7px 5px;
+  padding: 6px 5px 7px;
 
   text-align: center;
 
@@ -516,7 +519,7 @@ a {
 
 .adult-child-block input[type="text"] {
   width: 23px;
-  padding: 10px 0px 10px 15px;
+  padding: 10px 0px 9px 10px;
 
   font-weight: 700;
 
@@ -528,7 +531,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 35px;
+  margin-left: 40px;
   margin-right: auto;
 }
 
@@ -545,8 +548,8 @@ a {
 }
 
 .check-block input[type="text"] {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   font-weight: 700;
 
@@ -562,13 +565,12 @@ a {
 
 .plus-minus {
   margin: 0px;
-  padding: 11px 20px;
-  width: 35px;
+  padding: 8px 15px;
 
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 700;
   color: #a9a9a9;
-  text-align: center;
+  text-align: justify;
 
   background-color: #f2f2f2;
   border: none;
