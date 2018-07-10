@@ -390,6 +390,7 @@ a {
 }
 
 .hotel-search .best-offers {
+  margin: 0px;
   padding: 25px 0px 0px 0px;
 
   color: #333333;
@@ -672,9 +673,11 @@ a {
 }
 
 .map {
-  position: relative;
-
   margin-bottom: -90px;
+}
+
+.map-block {
+  position: relative;
 
   z-index: -2;
 }
