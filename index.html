@@ -96,7 +96,7 @@
         </div>
         <p class="best-offers">Укажите предполагаемые даты поездки, <br>и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
         <button class="hotelsearch-button" type="button" name="hotel-search">Поиск гостиницы в Седоне</button>
-        <form class="hotel-searching modal-show" action="https://echo.htmlacademy.ru" method="post">
+        <form class="hotel-searching" action="https://echo.htmlacademy.ru" method="post">
           <div class="check-block">
             <p>
               <label for="date-check-in">Дата заезда:</label>
@@ -160,20 +160,7 @@
         </p>
     </footer>
   </div>
-  <script>
-    var link = document.querySelector(".hotelsearch-button");
-    var popup = document.querySelector(".modal-show");
-    var close = popup.querySelector(".hotel-searching");
-
-    link.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("modal-show");
-    });
-
-    close.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.toggle("modal-show");
-    });
+  <script src="js/popup.js">
   </script>
   </body>
 </html>
