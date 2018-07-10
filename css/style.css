@@ -428,6 +428,7 @@ a {
   left: 0;
   right: 0;
 
+  display: none;
   margin: 0 auto;
   padding: 56px 55px 41px 55px;
   box-sizing: border-box;
@@ -437,6 +438,10 @@ a {
 
   background-color: #ffffff;
   box-shadow: 3px 5px 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+.modal-show {
+  display: block;
 }
 
 .hotel-searching input[type="text"] {
