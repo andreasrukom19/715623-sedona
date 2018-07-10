@@ -379,7 +379,9 @@ a {
 }
 
 .interest {
-  margin-top: 50px;
+  padding-top: 50px;
+
+  background-color: #ffffff;
 }
 
 .hotel-search b {
@@ -388,10 +390,12 @@ a {
 }
 
 .hotel-search .best-offers {
-  margin: 25px 0px 0px 0px;
+  padding: 25px 0px 0px 0px;
 
   color: #333333;
   line-height: 24px;
+
+  background-color: #ffffff;
  }
 
 .hotelsearch-button {
@@ -444,7 +448,6 @@ a {
 }
 
 .modal-show {
-  position: absolute;
   display: block;
   animation-name: bounce;
   animation-duration: 0.6s;
@@ -669,7 +672,11 @@ a {
 }
 
 .map {
+  position: relative;
+
   margin-bottom: -90px;
+
+  z-index: -2;
 }
 
 /* вторая страница */
