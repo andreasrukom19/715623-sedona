@@ -170,6 +170,12 @@ a {
   z-index: 2;
 }
 
+.features {
+  position: relative;
+
+  z-index: 1;
+}
+
 .features-list {
   display: flex;
   flex-wrap: wrap;
@@ -391,7 +397,7 @@ a {
 
 .hotel-search .best-offers {
   margin: 0px;
-  padding: 25px 0px 0px 0px;
+  padding: 25px 0px 47px 0px;
 
   color: #333333;
   line-height: 24px;
@@ -401,7 +407,6 @@ a {
 
 .hotelsearch-button {
   position: relative;
-  margin-top: 47px;
   width: 568px;
   padding: 32px 20px;
 
@@ -445,7 +450,7 @@ a {
 
   background-color: #ffffff;
   box-shadow: 3px 5px 15px 0 rgba(0, 0, 0, 0.3);
-  z-index: 0;
+  z-index: -1;
 }
 
 .modal-show {
@@ -454,6 +459,10 @@ a {
   animation-duration: 0.6s;
 
   z-index: 0;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 @keyframes bounce {
@@ -471,6 +480,28 @@ a {
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
 
@@ -673,7 +704,11 @@ a {
 }
 
 .map {
+  position: relative;
+
   margin-bottom: -90px;
+
+  z-index: 0;
 }
 
 .map-block {
@@ -780,7 +815,7 @@ a {
   position: absolute;
   left: -40px;
 
-  width: 23px;
+  width: 27px;
   height: 23px;
 
   background-image: url(../img/checkbox-on.svg);
@@ -793,7 +828,7 @@ a {
   position: absolute;
   left: -40px;
 
-  width: 23px;
+  width: 27px;
   height: 23px;
 
   background-image: url(../img/checkbox-off.svg);
@@ -1015,20 +1050,20 @@ a {
   margin-left: 13px;
 }
 
-.scope a path {
+.increase {
   fill: #cacaca;
 }
 
-.scope a:hover path,
-.scope a:focus path {
+.increase:hover path,
+.increase:focus path {
   fill: #231f20;
 }
 
-.scope a:active path {
+.increase:active path {
   fill: #81b3d2;
 }
 
-.scope a:not([href]) path {
+.decrease path {
   fill: #81b3d2;
 }
 
