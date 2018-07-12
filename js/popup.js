@@ -1,23 +1,17 @@
-    var link = document.querySelector(".hotelsearch-button");
-    var popup = document.querySelector(".hotel-searching");
-    var field = popup.querySelector("[required]");
+var link = document.querySelector(".hotelsearch-button");
+var popup = document.querySelector(".hotel-searching");
+var field = popup.querySelector(".check-field");
 
-    link.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.toggle("modal-show");
-      field.focus();
-    });
+link.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.toggle("modal-show");
+});
 
-    popup.addEventListener("submit", function (evt) {
-      if (!field.value) {
-      evt.preventDefault();
-      console.log("Ошибка");
-      popup.classList.add("modal-error");
-    }
-    });
-
-    popup.addEventListener("submit", function (evt) {
-      evt.preventDefault();
-      console.log("Отправляем форму");
-      popup.classList.remove("modal-error");
-    });
+popup.addEventListener("submit", function (evt) {
+  if (!field.value) {
+    evt.preventDefault();
+    popup.classList.add("modal-error");
+  } else {
+    popup.classList.remove("modal-error");
+  }
+});
